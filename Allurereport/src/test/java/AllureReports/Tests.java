@@ -27,9 +27,9 @@ public class Tests {
 	public void setup()
 	{
 		WebDriverManager.chromedriver().setup();
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("headless");
-		driver = new ChromeDriver(options);
+		//ChromeOptions options = new ChromeOptions();
+		//options.addArguments("headless");
+		driver = new ChromeDriver();
 		driver.get("https://www.nopcommerce.com/en/login?returnUrl=%2Fen");
 		driver.manage().window().maximize();
 		}
